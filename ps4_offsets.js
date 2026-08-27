@@ -426,6 +426,15 @@ PS4["12.02"] = Object.assign({}, PS4["12.00"], {
     kpatch: "1200.bin",
 });
 
+PS4["11.52"] = Object.assign({}, PS4["11.50"], {
+    alias_of: "11.50",
+    fw_status: "state=UNTESTED-on-hardware shares=11.50 "
+        + "webkit=assumed-identical-to-11.50 "
+        + "kernel_rvas=untested-vs-dump "
+        + "kpatch=1150.bin",
+    kpatch: "1150.bin",
+});
+
 // 12.52 IS 12.50, per the supplied table -- same kernel row, and the WebKit
 // side is taken from the single Lib_dump/12.50 module set because that is the
 // only 12.5x dump we have. The kernel half of that claim is consistent with
